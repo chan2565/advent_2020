@@ -5,7 +5,8 @@ with open("session.txt") as file:
     lines = file.readlines()
 cookies = {'session': lines[0]}
 
-# Pulls the input data down and writes it to a file for use in other scripts
+# Pulls the input data down and writes it to a file for use in other scripts.
+# Returns the file name that was written to.
 def get_input(day):
     url = f"https://adventofcode.com/2020/day/{day}/input"
     file_name = f"day{day}_input.txt"
